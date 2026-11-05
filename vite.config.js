@@ -7,7 +7,7 @@ const includes = {
         order: 'pre',
         handler: (html) =>
             html.replace(/<include src="(.+?)"><\/include>/g, (_, archivo) =>
-                readFileSync(`src/partials/${archivo}`, 'utf-8'),
+                readFileSync(`src/Partials/${archivo}`, 'utf-8'),
             ),
     },
 
